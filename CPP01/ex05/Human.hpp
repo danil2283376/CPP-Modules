@@ -8,9 +8,9 @@ class Human
     public:
         Human();
         std::string identify();
-        Brain *getBrain();
+        Brain &getBrain();
     private:
-        Brain *brain;
+        Brain brain;
         std::string locationBrain;
 };
 

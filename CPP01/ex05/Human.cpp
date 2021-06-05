@@ -2,15 +2,15 @@
 
 Human::Human()
 {
-    this->brain = new Brain();
+    this->brain = Brain();
 }
 
 std::string    Human::identify()
 {
-    return (this->brain->identify());
+    return (this->brain.identify());
 }
 
-Brain    *Human::getBrain()
+Brain  &  Human::getBrain()
 {
     return (this->brain);
 }

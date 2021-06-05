@@ -11,6 +11,11 @@ HumanB::HumanB(std::string name, Weapon weapon)
     
 }
 
+void HumanB::setWeapon(Weapon& weapon)
+{
+    this->weapon = weapon;
+}
+
 void HumanB::attack()
 {
     std::cout << name << " attacks: " << weapon.getType() << std::endl;
