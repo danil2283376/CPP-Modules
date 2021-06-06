@@ -1,0 +1,4 @@
+In this task, we will create another hook class, but only with different settings, with completely different attacks, and different replicas, also using OOP paradigms.
+To start the program:
+1) Register command g++ FragTrap.cpp FragTrap.hpp ScavTrap.cpp ScavTrap.hpp main.cpp
+2) Run binary file, with command ./a.out

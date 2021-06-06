@@ -1,0 +1,4 @@
+In this task we will create 1 more trap, with different attacks, and with different behavior.
+To start the program:
+1) Register command g++ FragTrap.cpp FragTrap.hpp ScavTrap.cpp ScavTrap.hpp FragTrap.cpp FragTrap.hpp main.cpp
+2) Run binary file, with command ./a.out

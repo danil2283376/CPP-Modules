@@ -1,0 +1,3 @@
+In this task, we will create 1 more enemy, when someone stumbles upon him, he will attack in a variety of ways, depending on the enemy.
+To run the program you need:
+1) Register command g++ FragTrap.cpp FragTrap.hpp ScavTrap.cpp ScavTrap.hpp FragTrap.cpp FragTrap.hpp NinjaTrap.cpp NinjaTrap.hpp main.cpp
