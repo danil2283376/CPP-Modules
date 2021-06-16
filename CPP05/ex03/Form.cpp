@@ -12,12 +12,20 @@ Form::Form(std::string name, int grade, int execute)
         throw Form::GradeTooHighException();
 }
 
-std::string Form::getName()
+Form::Form(Form const &copy)
+{
+    this->_name = copy._name;
+    this->_isWriten = copy._isWriten;
+    this->_grade = copy._grade;
+    this->_execute = copy._execute;
+}
+
+std::string Form::getName() const
 {
     return (this->_name);
 }
 
-bool Form::getWriten()
+bool Form::getWriten() const
 {
     return (this->_isWriten);
 }
@@ -32,12 +40,22 @@ const char *Form::GradeTooLowException::what() const throw()
     return ("Form is LOW!");
 }
 
-int Form::getGrade()
+const char *Form::FormNotWritenException::what() const throw()
+{
+    return ("Form not writen");
+}
+
+const char *Form::LowExecuteException::what() const throw()
+{
+    return ("Low execute exception");
+}
+
+int Form::getGrade() const
 {
     return (this->_grade);
 }
 
-int Form::getExecute()
+int Form::getExecute() const
 {
     return (this->_execute);
 }
@@ -58,6 +76,7 @@ void Form::beSigned(Bureaucrat *bureucrat)
     else
         throw Form::GradeTooLowException();
 }
+
 
 Form::~Form()
 {

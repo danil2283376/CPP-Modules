@@ -28,6 +28,10 @@ void SignTest()
 	catch (const std::exception& e) {
 		std::cerr << e.what() << std::endl;
 	}
+	catch(Exception e)
+	{
+		e.
+	}
 	std::cout << std::endl;
 /*
  * Бюрократ не подпишет форму, так как форма уже подписана
